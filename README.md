@@ -1,20 +1,23 @@
-# 🌦️ Dashboard de Monitoramento Climático Anual
+# 🌦️ D # Weather Data Pipeline & Analytics Framework 🌦️
 
-Este projeto utiliza **Python** e as bibliotecas **Pandas** e **Matplotlib** para realizar a análise de dados climáticos simulados de um ciclo completo de 365 dias.
+## 📌 Visão Geral
+Este projeto simula um pipeline de dados climáticos para análise de sazonalidade e risco ambiental. Ele foi desenvolvido sob princípios de **Engenharia de Software**, focando em escalabilidade, modularidade e governança de dados.
 
-## 🚀 Objetivo do Projeto
-Demonstrar a aplicação de médias móveis para identificação de tendências sazonais e visualização de grandes volumes de dados em ambiente Linux.
+## ⚖️ Conformidade e LGPD (Data Privacy)
+Embora este projeto utilize dados sintéticos (simulados), ele foi estruturado seguindo as diretrizes da **LGPD (Lei Geral de Proteção de Dados)**:
+- **Anonimização:** Não há coleta de dados de usuários finais ou PII (Personally Identifiable Information).
+- **Finalidade:** Os dados processados destinam-se exclusivamente a estudos estatísticos climáticos.
+- **Transparência:** O processamento é realizado localmente (On-premise/Edge computing) sem vazamento para nuvens de terceiros não autorizadas.
 
-## 📊 Visualização dos Resultados
-Abaixo, o gráfico gerado automaticamente pelo script, mostrando a correlação entre temperatura e precipitação ao longo de um ano:
+## 🛠️ Arquitetura e Engenharia
+- **Ambiente:** Lubuntu Linux (Kernel otimizado com swap memory em SSD para gestão de processos).
+- **Linguagem:** Python 3.12+
+- **Bibliotecas Core:** - `Pandas`: Estruturação de DataFrames.
+  - `Matplotlib`: Visualização técnica com médias móveis (window=30).
+  - `Numpy`: Simulação estocástica de variações climáticas.
 
-![Dashboard Anual](./dashboard_anual.png)
-
-## 🛠️ Tecnologias Utilizadas
-* **Linguagem:** Python 3.x
-* **Bibliotecas:** Pandas, Matplotlib, Numpy
-* **Sistema Operacional:** Lubuntu Linux (Otimizado com SSD e Swap)
-* **Controle de Versão:** Git/GitHub
+## 📊 Governança de Dados
+O sistema implementa uma análise de **12 meses**, permitindo a identificação de anomalias térmicas e picos de precipitação, essenciais para tomada de decisão em setores como Logística e GRC (Governança, Riscos e Conformidade).
 
 ---
-*Desenvolvido por Roberlande Silva*
+*Mantido por: Roberlande Silva*
